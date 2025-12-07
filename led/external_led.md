@@ -185,13 +185,22 @@ ros2 run led_serial_bridge ros2_serial_led
 ```
 
 ---
-
 ## 8. ROS2 Commands
+Source ROS2 in a new terminal:
+```bash
+
+ROSDISTRO=$(ls /opt/ros | head -n1)
+source /opt/ros/$ROSDISTRO/setup.bash
+---
+LED ON
 ```bash
 ros2 topic pub /led_cmd std_msgs/String "data: 'ON'"
 ros2 topic pub /led_cmd std_msgs/String "data: 'OFF'"
 ros2 topic pub /led_cmd std_msgs/String "data: 'BLINK 200'"
 ros2 topic pub /led_cmd std_msgs/String "data: 'STOP'"
 ```
-
+LED OFF
+```bash
+ros2 topic pub /led_cmd std_msgs/String "data: 'OFF'"
+```
 ---

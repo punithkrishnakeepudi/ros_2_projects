@@ -553,7 +553,7 @@ float64 humidity
   <name>my_robot_msgs</name>
   <version>0.0.0</version>
   <description>Custom messages for my_robot</description>
-  <maintainer email="parvez.sd@viavisolution.com">parvez</maintainer>
+  <maintainer email="parvez.sd@gmail.com">parvez</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
@@ -653,7 +653,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='parvez',
-    maintainer_email='parvez.sd@viavisolution.com',
+    maintainer_email='parvez.sd@gmail.com',
     description='ROS2 learning package',
     license='MIT',
     extras_require={'test': ['pytest']},
